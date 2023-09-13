@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+{% block main%}     
+ <form action="{{url_for('form')}}" method="POST">
+        <br>
+        <label> <b>Number 1:</b></label> <input type="text" name = "num1"  placeholder="num1"  required = "required">
+        <br><br>
+        <label> <b>Number 2:</b> </label> <input type="text" name = "num2"   placeholder="num2"  required = "required">
+        <br><br>
+        <label> <b>Number 3:</b> </label> <input type="text" name = "num3"  placeholder="num3"  required = "required" >
+        <br><br><br>
+        <button class="btn btn-success" type="submit">Calculate</button>
+      </form>
+      The Average Marks is {{score}}
+      {% endblock %}
+ 
